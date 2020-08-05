@@ -4,6 +4,7 @@ import Signup from './Components/Forms/Signup'
 import Forgotpassword from './Components/Forms/Forgotpassword'
 import MainPage from './Views/Mainpage'
 import Test from './Components/Forms/Test'
+import Car from './Components/Car'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={MainPage} />
         <Route path="/login" component={Login} />
+        <Route path="/car" component={Car} />
         <Route path="/signup" component={Signup} />
         <Route path="/forgotpassword" component={Forgotpassword} />
         <Route path="/test" component={Test} />

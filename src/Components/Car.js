@@ -18,7 +18,7 @@ class Car extends React.Component {
             else {
                 this.setState({ color: "red" });
             }
-        }, 2000)
+        }, 500)
     }
     changeColor = () => {
         if (this.state.color == "red") {
@@ -40,10 +40,9 @@ class Car extends React.Component {
         return (
             <div>
                 <h4>My {this.state.brand}</h4>
-                <p>
-                    It is a {this.state.color} {this.state.model} from {this.state.year}.
-                </p>
-
+                <p>Color {this.state.color}</p>
+                <p>Model{this.state.model}</p>
+                <p>Year {this.state.year}</p>
                 <Button onClick={this.changeColor}>Change color</Button>
                 <Button primary onClick={this.changeModel}>Change model</Button>
 
