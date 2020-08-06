@@ -42,7 +42,7 @@ const ResponsiveLayout = () => (
     <div>
         <Header as='h1' content='My home' style={style.h1} textAlign='center' />
         <Container>
-            <Menu stackable>
+            <Menu secondary>
                 <Menu.Item>
                     <img src={Logo} />
                 </Menu.Item>

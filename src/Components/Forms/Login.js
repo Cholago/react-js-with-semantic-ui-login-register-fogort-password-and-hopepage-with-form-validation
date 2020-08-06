@@ -2,6 +2,7 @@ import React from 'react'
 import { Button, Grid, Form, Header, Segment } from 'semantic-ui-react'
 import { Link } from 'react-router-dom';
 import { Redirect } from "react-router-dom";
+import './App.css';
 
 //valid email regex
 const validEmailRegex = RegExp(/^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/);

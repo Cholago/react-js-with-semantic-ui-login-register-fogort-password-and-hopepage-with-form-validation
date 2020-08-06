@@ -6,7 +6,7 @@ import MainPage from './Views/Mainpage'
 import Test from './Components/Forms/Test'
 import Car from './Components/Car'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
+import './App.css';
 function App() {
   return (
     <Router>
