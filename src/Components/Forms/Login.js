@@ -131,43 +131,45 @@ class Login extends React.Component {
         }
 
         return (
-            <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
-                <Grid.Column style={{ maxWidth: 350 }}>
-                    <Header as='h2' color='blue' textAlign='center'>
-                        Login
+            <div className="background-image">
+                <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
+                    <Grid.Column style={{ maxWidth: 350 }}>
+                        <Header as='h2' color='blue' textAlign='center'>
+                            Login
                     </Header>
-                    <Form size='large' loading={this.state.loading} onSubmit={this.mySubmitHandler}>
-                        <Segment raised>
-                            <Form.Input
-                                fluid icon='envelope'
-                                iconPosition='left'
-                                placeholder='E-mail address'
-                                //error={{ content: 'Please enter your first name' }}
-                                error={errors.email}
-                                type='email'
-                                value={data.email}
-                                name="email"
-                                onChange={this.myChangeHandler}
+                        <Form size='large' loading={this.state.loading} onSubmit={this.mySubmitHandler}>
+                            <Segment raised>
+                                <Form.Input
+                                    fluid icon='envelope'
+                                    iconPosition='left'
+                                    placeholder='E-mail address'
+                                    //error={{ content: 'Please enter your first name' }}
+                                    error={errors.email}
+                                    type='email'
+                                    value={data.email}
+                                    name="email"
+                                    onChange={this.myChangeHandler}
 
-                            />
-                            <Form.Input
-                                fluid icon='lock'
-                                iconPosition='left'
-                                placeholder='Password'
-                                error={errors.password}
-                                type='password'
-                                value={data.password}
-                                name="password"
-                                onChange={this.myChangeHandler}
-                            />
-                            <Button color='blue' fluid size='small' disabled={this.state.loading} type='submit'>{this.state.buttonText}</Button>
-                            <p>Not registered? <Link to="/signup">Sign up</Link></p>
-                            <p><Link to="/forgotpassword">Forgot password</Link></p>
-                        </Segment>
-                    </Form>
+                                />
+                                <Form.Input
+                                    fluid icon='lock'
+                                    iconPosition='left'
+                                    placeholder='Password'
+                                    error={errors.password}
+                                    type='password'
+                                    value={data.password}
+                                    name="password"
+                                    onChange={this.myChangeHandler}
+                                />
+                                <Button color='blue' fluid size='small' disabled={this.state.loading} type='submit'>{this.state.buttonText}</Button>
+                                <p>Not registered? <Link to="/signup">Sign up</Link></p>
+                                <p><Link to="/forgotpassword">Forgot password</Link></p>
+                            </Segment>
+                        </Form>
 
-                </Grid.Column>
-            </Grid>
+                    </Grid.Column>
+                </Grid>
+            </div>
         );
     }
 
